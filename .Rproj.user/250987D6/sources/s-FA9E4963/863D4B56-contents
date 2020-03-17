@@ -1,0 +1,12 @@
+# example function how to pick values in a specific interval
+err <- rnorm(100)
+
+between <- function(x, interval = c(0.8, 0.9)) {
+  if(any(interval > 1) | any(interval < 0)) stop("Interval has to be between 0 and 1")
+  if(interval[1] >= interval[2]) stop("Lower value has to be smaller than the upper value")
+  interval <- quantile(x = x, probs = interval)
+  x <- x[x >= interval[1] & x <= interval[2]]
+  max(x)
+}
+# pic the maximum value in a specific interval
+between(err, c(.2, .3))

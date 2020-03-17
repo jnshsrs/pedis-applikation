@@ -1,0 +1,12 @@
+name: pedis-applikation
+title: pedis-applikation
+username:
+account: jnshsrs
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1958419
+bundleId: 2890492
+url: https://jnshsrs.shinyapps.io/pedis-applikation/
+when: 1584456988.06621
+asMultiple: FALSE
+asStatic: FALSE
